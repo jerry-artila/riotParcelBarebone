@@ -1,0 +1,13 @@
+<my-app>
+    <main class="w3-panel">
+        <h1 class="w3-text-teal">Riot Rocks!</h1>
+        <div>
+            <img src={ props.photo1.url } width={ props.photo1.width }>
+            <img src={ props.photo2.url } width={ props.photo2.width }>
+        </div>
+        <h2 class="w3-text-cyan">使用到的 npm packages</h2>
+        <ul>
+            <li each={ item in props.items }>{ item }</li>
+        </ul>
+    </main>
+</my-app>
